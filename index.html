@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tic-Tac-Toe Game</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <div class="msg-container hide">
-      <p id="msg">Winner</p>
-      <button id="new-btn">New Game</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Games</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Fun Games</h1>
+    </header>
+    <div class="container">
+    <!-- Tic Tac Toe -->
+    <div class="game-card">
+      <a href="./tic_tac_toe.html">
+        <img src="./images/tic-tac-toe.jpg" alt="Tic Tac Toe">
+        <h3>Tic Tac Toe</h3>
+      </a>
     </div>
-    <main>
-      <h1>Tic Tac Toe</h1>
-      <div class="container">
-        <div class="game">
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-          <button class="box"></button>
-        </div>
-      </div>
-      <button id="reset-btn">Reset Game</button>
-    </main>
-    <script src="index.js"></script>
-    <footer>
-      Made By Tiyasha
-    </footer>
-  </body>
+
+    <!-- Rock Paper Scissors -->
+    <div class="game-card">
+      <a href="./rock_paper.html">
+        <img src="./images/rock-paper-scissors.jpg" alt="Rock Paper Scissors">
+        <h3>Rock Paper Scissors</h3>
+      </a>
+    </div>
+  </div>
+  <footer style="text-align: center;">
+    Made By Tiyasha
+  </footer>
+</body>
 </html>
