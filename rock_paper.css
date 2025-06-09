@@ -68,9 +68,13 @@ img{
         align-items: center;
     }
     .choices{
-        display: flex;
-        justify-content: center;
         gap: 0.5rem;
-        margin-top: 5rem;
+    }
+    .choice{
+        height: 140px;
+        width: 140px;
+    }
+    #msg{
+        display: block;
     }
 }
