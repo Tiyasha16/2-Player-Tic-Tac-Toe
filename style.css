@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    width: 100%;
     background-color: #A6B1E1;
     font-family: Arial, sans-serif;
     display: flex;
@@ -26,6 +27,7 @@ header h1 {
 
 .container {
     display: flex;
+    flex-direction: column;
     gap: 40px;
     margin-top: 60px;
 }

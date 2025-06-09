@@ -8,6 +8,12 @@ body {
   text-align: center;
 }
 
+h1{
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
 .container {
   height: 70vh;
   display: flex;

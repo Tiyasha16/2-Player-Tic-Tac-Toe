@@ -3,6 +3,7 @@
     padding: 0;
     text-align: center;
 }
+
 h1{
     background-color: rgb(38, 30, 88);
     color: aliceblue;
@@ -56,4 +57,20 @@ img{
     display: inline;
     padding: 1rem;
     border-radius: 1rem;
+}
+
+@media (max-width: 700px){
+    img{
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        align-items: center;
+    }
+    .choices{
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 5rem;
+    }
 }
