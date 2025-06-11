@@ -3,9 +3,14 @@ let resetBtn = document.querySelector("#reset-btn");
 let newGameBtn = document.querySelector("#new-btn");
 let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
+let turnMsg = document.querySelector("h3");
 
 let turnO = true; //playerX, playerO
 let count = 0; //To Track Draw
+let turnOMsg = "Player-O's turn";
+let turnXMsg = "Player-X's turn"
+
+turnMsg.innerText = turnOMsg; //initial turn
 
 const winPatterns = [
   [0, 1, 2],
@@ -31,10 +36,12 @@ boxes.forEach((box) => {
       //playerO
       box.innerText = "O";
       turnO = false;
+      turnMsg.innerText = turnXMsg;
     } else {
       //playerX
       box.innerText = "X";
       turnO = true;
+      turnMsg.innerText = turnOMsg;
     }
     box.disabled = true;
     count++;
